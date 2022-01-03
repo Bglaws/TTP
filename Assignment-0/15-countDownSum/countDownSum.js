@@ -1,7 +1,11 @@
 class MySolution {
-  countDownSum(num) {
-    // Insert code here;
-  }
+
+	countDownSum(num) {
+		if (this.num == 1) {
+			return 1;
+		}
+		return this.num + this.countDownSum(this.num - 1);
+  	}
 }
 
 // Do not edit this line;
